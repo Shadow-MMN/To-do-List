@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>To-do-list</title>
+</head>
+<body class="">
+    <header class="flex justify-between items-center w-full p-4 bg-gray-100">
+        <h1 class="font-mono font-black text-3xl">To-do List</h1>
+        <svg class="w-12 h-12 fill-rose-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="4" width="18" height="16" rx="2" stroke="black" stroke-width="2"/>
+            <line x1="8" y1="8" x2="16" y2="8" stroke="black" stroke-width="2"/>
+            <line x1="8" y1="12" x2="16" y2="12" stroke="black" stroke-width="2"/>
+            <line x1="8" y1="16" x2="12" y2="16" stroke="black" stroke-width="2"/>
+        </svg>
+    </header>      
+    <main class="pt-3 bg-gray-700 text-white min-h-[900px]">
+        <form action="" id="form" class="flex flex-col w-11/12 sm:w-1/2 mx-auto">
+            <label for="to-do" class="block text-2xl ml-2">Add to List </label>
+           <div class="w-full flex ">
+                <input class="focus:bg-rose-200 border-2 border-rose-500 p-2 rounded-l-md w-5/6 hover:border-slate-400 text-black placeholder:text-rose-500" type="text" name="to-do" id="to-do" placeholder="E.g I will eat by 2pm" >
+                <button class="w-1/6 border border-gray-600 text-white bg-rose-500 rounded-r-lg hover:bg-rose-50 hover:text-rose-700" type="submit">Add</button>
+           </div>
+        </form>
+        <div class="w-11/12 md:w-1/2 mx-auto bg-slate-400 rounded-lg p-6 min-h-[550px]">
+            <ol class="list-decimal pl-3 text-white flex flex-col gap-6" type="1" id="list">
+            </ol>        
+         </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
